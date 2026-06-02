@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+:root {
+  background: #E9E9E9;
+}
+
+@theme {
+
+   --color-homeBackground: #1042d8;
+   --color-name: #FFFFFF;
+   --color-name: #FFFFFF;
+
+   --shadow-3xl: 0 2px 2px hsla(0, 0%, 0%, 1);
+   --shadow-blur: 0 6px 15px hsla(0, 0%, 0%, 1);
+   --shadow-soft-blur: 0 6px 10px hsla(0, 0%, 0%, 0.2);
+   --shadow-red-3xl: 0 2px 2px hsla(0, 100%, 50%, 1);
+   --shadow-3xl-inset: inset 0 -2px 2px hsla(0, 0%, 0%, 0.1);
+   --inset-shadow-md: inset 0 -1px 2px rgba(0, 0, 0, 0.25);
+   --inset-shadow-lg: inset 0 -2px 3px rgba(0, 0, 0, 0.35);
+
+}
+
+@keyframes floating {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-6px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.float-1 {
+  animation: floating 4s ease-in-out infinite;
+}
+
+.float-2 {
+  animation: floating 5.3s ease-in-out infinite 0.8s;
+}
