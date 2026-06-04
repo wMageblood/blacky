@@ -1,0 +1,28 @@
+import { PawPrint, Heart, Bone, ShieldPlus, Stethoscope, House, BadgePlus, Turtle, Cat, Dog, Fish, Bird, Rabbit, HeartHandshake, Syringe, Pill, Cross, CirclePlus, Smile, ScanHeart, Activity, Hospital, Home } from "lucide-react";
+
+export const BACKGROUND_ICONS = [
+  PawPrint,
+  Heart,
+  Bone,
+  ShieldPlus,
+  Stethoscope,
+  Cat,
+  Dog,
+  Fish,
+  Bird,
+  Rabbit,
+  HeartHandshake,
+  Syringe,
+  Pill,
+  Cross,
+  CirclePlus,
+  Smile,
+  ScanHeart,
+  Activity,
+  Hospital,
+  Home,
+  House,
+  BadgePlus,
+  Turtle,
+  PawPrint,
+];

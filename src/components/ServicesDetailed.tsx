@@ -1,32 +1,28 @@
 import servicesDetailed from "../constants/servicesDetailed.tsx";
+import filomeno from "../assets/filomeno.png";
+import { openWhatsapp } from "../utility/openWhatsapp.ts";
 
 export const ServicesDetailed = () => {
   return (
-    <div className="relative">
-      <h1 className='text-3xl tracking-tighter font-semibold mb-5'>Nuestros servicios:</h1>
-      <div className="relative z-10">
-        {servicesDetailed.map(
-          ({ serviceName, serviceDescription, serviceIcon }) => (
-            <div className="bg-[#d2daf0] hover:bg-[#abbcec] shadow-soft-blur transition duration-300 rounded-xl p-6 mb-5 bg-[repeating-linear-gradient(40deg,rgba(0,0,0,0.02)_0px,rgba(0,0,0,0.02)_3px,transparent_3px,transparent_50px)]">
-              <div className='flex justify-between'>
-                <button className="mt-5 px-4 py-2 rounded-full bg-[#4c6fe2]">
-                  {serviceIcon}
-                </button>
-                <button className='mt-5 px-4 py-2 rounded-full font-semibold bg-[#65e0b1]'>
-                  {`Reserva tu ${serviceName}`}
-                </button>
-              </div>
-              <h3 className="mt-10 text-2xl font-semibold">
-                {serviceName}
-              </h3>
-              <p className="mt-3">
-                {serviceDescription}
-              </p>
+    <>
+    <h1 className='text-3xl font-bold mt-10'>Nuestros servicios</h1>
+      {servicesDetailed.map(({serviceName, serviceDescription, serviceIcon, message}, index) =>
+        <div className='grid grid-cols-1 md:grid-cols-3 gap-4 bg-[#e8f5f0] px-4 py-6'>
+          <div className={`col-span-2 ${index % 2 !== 0 ? "order-2" : ""} relative`}>
+            <h1 className={`font-semibold ${index % 2 !== 0 ? "ml-3" : ""} tracking-tighter mb-5 text-2xl`}>{serviceName}</h1>
+            <p className={`${index % 2 !== 0 ? "ml-3" : ""}`}>{serviceDescription}</p>
+            <div className={`absolute ${index % 2 !== 0 ? "bottom-[0%] right-[1%]" : "bottom-[0%] left-[1%]"}`}>
+              {serviceIcon}
             </div>
-          )
-        )}
-      </div>
-
-    </div>
+          </div>
+          <div className={`${index % 2 !== 0 ? "order-1" : ""} relative`}>
+            <img className='col-span-1 w-full h-full object-cover rounded-sm' src={filomeno}/>
+            <div className={`absolute ${index % 2 !== 0 ? "md:bottom-[5%] md:left-[5%]" : "md:bottom-[5%] md:right-[5%]"}`}>
+              <button onClick={() => openWhatsapp(message)} className='rounded-full bg-[#e9e9e9] hover:bg-[#b69f9f] transition duration-300 border border-black font-semibold px-4 py-1'>Reserva {serviceName}</button>
+            </div>
+          </div>
+        </div>
+      )}
+    </>
   );
 };

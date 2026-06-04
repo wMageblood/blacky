@@ -35,9 +35,9 @@
 }
 
 .float-1 {
-  animation: floating 4s ease-in-out infinite;
+  animation: floating 2s ease-in-out infinite;
 }
 
 .float-2 {
-  animation: floating 5.3s ease-in-out infinite 0.8s;
+  animation: floating 2.5s ease-in-out infinite 0.8s;
 }

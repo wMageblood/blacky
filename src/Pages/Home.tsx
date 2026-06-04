@@ -1,33 +1,51 @@
+import ofis from "../assets/ofis.png"
 import dog from "../assets/home-dog.png"
 import blacky from "../assets/blacky.jpg"
 import roberto from "../assets/roberto.png"
 import { ServicesCard } from "../components/ServicesCard.tsx";
+import { openWhatsapp } from "../utility/openWhatsapp.ts";
+import { BACKGROUND_ICONS } from "../components/BackgroundIcons.tsx"
+
+
 
 export const Home = () => {
+
+
+
   return (
     <div className='my-6'>
-      <div className='flex relative text-white w-[85%] min-h-150 rounded-xl mx-auto px-5 py-5 bg-[repeating-linear-gradient(45deg,rgba(255,255,255,0.05)_0px,rgba(255,255,255,0.05)_3px,transparent_1px,transparent_50px)] bg-homeBackground'>
-       <div className='text-center my-auto ml-25'>
-        <h1 className='text-3xl font-bold my-5'>Por nuestras mascotas,<br/> para siempre.</h1>
-        <h2 className=''>Servicios para tus mascotas en Zapopan.</h2>
-       </div>
-       <div className='flex'>
-        <button className='absolute left-0 mx-5 bg-[#E9E9E9] rounded-full px-5 py-2 text-black font-bold'>Logo</button>
-        <div className='flex absolute right-0 *:bg-[#E9E9E9] *:rounded-full *:text-black font-bold mx-5'>
-          <button className='px-5 py-2 mx-2 hover:bg-rose-500 hover:text-white transition duration-300 shadow-3xl'>Ve nuestros servicios</button>
-          <button className='px-8 py-2 mx-2 hover:bg-green-500 transition duration-300 shadow-3xl'>Crea una cita</button>
+      <div className={`bg-[#019099] w-[85%] md:w-[60%] relative mx-auto p-4 overflow-hidden rounded-xl`}>
+        <div className="absolute inset-0 grid grid-cols-6 place-items-center">
+          {BACKGROUND_ICONS.map((Icon, index) => (
+            <Icon
+              key={index}
+              className="w-12 h-12 text-red opacity-10"
+            />
+          ))}
         </div>
-       </div>
-        <div className='absolute right-25 top-25'>
-          <img src={dog} alt={'doggy dog dog'} />
+        <div className='flex justify-between relative z-2'>
+          <img className='w-35' src={ofis}/>
+          <div className=''>
+            <button className='bg-[#E9E9E9] rounded-full px-4 py-2 font-semibold tracking-tighter transition duration-300 shadow-3xl mr-3 hover:bg-rose-400'>Servicios</button>
+            <button onClick={() => openWhatsapp("Hola, me gustaría agendar una cita para mi mascota.")} className='bg-[#E9E9E9] rounded-full px-4 py-2 font-semibold tracking-tighter transition duration-300 shadow-3xl hover:bg-green-400'>Agenda Cita</button>
+          </div>
+        </div>
+        <div className='flex justify-between z-2'>
+          <div className='my-auto mx-auto text-center text-[#e9e9e9]'>
+            <h1 className='text-3xl font-semibold tracking-tighter mb-5 filter-[drop-shadow(1px_1px_3px_black)_drop-shadow(0px_0px_0px_black)]'>Por nuestras mascotas, <br/> para siempre.</h1>
+            <p className='text-xl filter-[drop-shadow(1px_1px_3px_black)_drop-shadow(0px_0px_0px_black)]'>Tu servicio de veterinaria en Zapopan.</p>
+          </div>
+          <div className='mr-15 z-1'>
+            <img src={dog} alt={'doggy doggo dog dog'}/>
+          </div>
         </div>
       </div>
 
-      <div className='my-10 w-[85%] mx-auto'>
+      <div className='my-10 w-[85%] md:w-[60%] mx-auto'>
         <ServicesCard />
       </div>
 
-      <div className='flex shadow-2xl relative rounded-sm w-[85%] min-h-112.5 mx-auto p-5 bg-[#f1e3e3]  bg-[repeating-linear-gradient(125deg,rgba(0,0,0,0.06)_0px,rgba(0,0,0,0.06)_3px,transparent_3px,transparent_50px)]'>
+      <div className='flex shadow-2xl relative rounded-sm w-[85%] md:w-[60%] min-h-112.5 mx-auto p-5 bg-[#f1e3e3]  bg-[repeating-linear-gradient(125deg,rgba(0,0,0,0.06)_0px,rgba(0,0,0,0.06)_3px,transparent_3px,transparent_50px)]'>
         <div className=''>
           <h1 className='text-4xl font-semibold tracking-tighter mb-10'>Experiencias magnificas <br/> para tu mascota aseguradas.</h1>
           <p>
