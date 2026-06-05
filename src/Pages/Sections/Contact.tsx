@@ -9,7 +9,7 @@ export const Contact = () => {
     <div className='mb-15'>
       <div className='grid grid-cols-1 md:grid-cols-3 *:rounded-xl w-[85%] md:w-[60%] mx-auto gap-6'>
         <div className=' col-span-1 md:col-span-2 bg-[#efe8f5] flex justify-between px-4 py-6 shadow-soft-blur'>
-          <span className='text-6xl font-semibold tracking-tighter my-auto ml-15'>Contáctanos:</span>
+          <span className='text-6xl font-semibold tracking-tighter my-auto mx-auto'>Contáctanos:</span>
         </div>
         <div className='shadow-soft-blur'>
           <img className='w-full h-full object-cover block rounded-xl' width={400} src={filomeno}/>

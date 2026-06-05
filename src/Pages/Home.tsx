@@ -10,8 +10,6 @@ import { BACKGROUND_ICONS } from "../components/BackgroundIcons.tsx"
 
 export const Home = () => {
 
-
-
   return (
     <div className='my-6'>
       <div className={`bg-[#019099] w-[85%] md:w-[60%] relative mx-auto p-4 overflow-hidden rounded-xl`}>
@@ -35,7 +33,7 @@ export const Home = () => {
             <h1 className='text-3xl font-semibold tracking-tighter mb-5 filter-[drop-shadow(1px_1px_3px_black)_drop-shadow(0px_0px_0px_black)]'>Por nuestras mascotas, <br/> para siempre.</h1>
             <p className='text-xl filter-[drop-shadow(1px_1px_3px_black)_drop-shadow(0px_0px_0px_black)]'>Tu servicio de veterinaria en Zapopan.</p>
           </div>
-          <div className='mr-15 z-1'>
+          <div className='ml-auto z-1'>
             <img src={dog} alt={'doggy doggo dog dog'}/>
           </div>
         </div>
@@ -45,21 +43,22 @@ export const Home = () => {
         <ServicesCard />
       </div>
 
-      <div className='flex shadow-2xl relative rounded-sm w-[85%] md:w-[60%] min-h-112.5 mx-auto p-5 bg-[#f1e3e3]  bg-[repeating-linear-gradient(125deg,rgba(0,0,0,0.06)_0px,rgba(0,0,0,0.06)_3px,transparent_3px,transparent_50px)]'>
-        <div className=''>
-          <h1 className='text-4xl font-semibold tracking-tighter mb-10'>Experiencias magnificas <br/> para tu mascota aseguradas.</h1>
-          <p>
-            En ofis pet nos aseguramos que tu mascota este siempre bien atendida, <br/> son tan importantes para nosotros como para ti. <br/> Cada hermosa mascota recibe la atención especial y dedicada de nuestra familia.
-            <br/>Como una empresa independiente y familiar, <br/> es nuestro objetivo principal brindarles el mejor servicio posible, <br/> desde esteticas hasta cirugias.
-          </p>
-          <div className='mt-30'>
-            <button className='px-5 py-2 mx-2 rounded-full border-2 border-black font-semibold bg-[#D95C5C] hover:bg-[#9E3434] hover:text-white hover:border-[#f1e3e3] transition duration-300'>Agenda consulta médica</button>
-            <button className='px-8 py-2 my-4 md:my-0 mx-2 rounded-full border-2 border-black font-semibold bg-[#D95C5C] hover:bg-[#9E3434] hover:text-white hover:border-[#f1e3e3] transition duration-300'>Agenda estetica</button>
+      <div className='bg-[#F1E3E3] shadow-soft-blur w-[85%] md:w-[60%] mx-auto p-5 mb-15'>
+        <div className='grid grid-cols-1 md:grid-cols-2'>
+          <div className='flex flex-col'>
+            <h1 className='text-4xl font-semibold tracking-tighter mb-10'>Experiencias magnificas <br/> para tu mascota aseguradas.</h1>
+            <p className='mb-5'>
+              En Ofis Pet creemos que cada mascota merece atención, cuidado y cariño de la más alta calidad. Como una empresa familiar e independiente, nos comprometemos a brindar un servicio cercano y profesional, desde estéticas y consultas hasta procedimientos especializados.
+            </p>
+            <div className='md:mt-auto mx-auto md:mx-0 mt-5'>
+              <button className='px-5 py-2 mx-2 rounded-full border-2 border-black font-semibold bg-[#D95C5C] hover:bg-[#9E3434] hover:text-white hover:border-[#f1e3e3] transition duration-300'>Agenda consulta médica</button>
+              <button className='px-8 py-2 my-4 md:my-2 mx-2 rounded-full border-2 border-black font-semibold bg-[#D95C5C] hover:bg-[#9E3434] hover:text-white hover:border-[#f1e3e3] transition duration-300'>Agenda estetica</button>
+            </div>
           </div>
-        </div>
-        <div className=''>
-          <img className='float-1 absolute border-4 top-82 right-5 md:top-10 md:right-5 border-[#D95C5C] w-25 md:w-50 rounded-tr-4xl rounded-bl-4xl rounded-tl-xl rounded-br-xl' src={blacky} width={200}/>
-          <img className='float-2 absolute border-4 bottom-22 right-30 md:bottom-5 md:right-60 border-[#D95C5C] w-23 md:w-48 rounded-tl-4xl rounded-br-4xl rounded-tr-xl rounded-bl-xl' src={roberto} width={184}/>
+          <div className='flex md:ml-auto mx-auto my-5 gap-4'>
+            <img className='float-1 shadow-soft-blur border-2 border-[#D95C5C] w-40 h-55 md:w-50 md:h-75 rounded-tr-4xl rounded-bl-4xl rounded-tl-xl rounded-br-xl' src={blacky}/>
+            <img className='float-2 shadow-soft-blur border-2 border-[#D95C5C] w-40 h-55 md:w-48 md:h-75 rounded-tl-4xl rounded-br-4xl rounded-tr-xl rounded-bl-xl' src={roberto}/>
+          </div>
         </div>
       </div>
     </div>
