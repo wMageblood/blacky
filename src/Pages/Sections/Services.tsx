@@ -5,7 +5,7 @@ import biggieAfter from "../../assets/biggie-after.png"
 
 export const Services = () => {
   return (
-    <div className='my-15'>
+    <div id="servicios" className='my-15'>
       <div className='mx-auto w-[85%] md:w-[60%]'>
         <ServicesDetailed />
       </div>

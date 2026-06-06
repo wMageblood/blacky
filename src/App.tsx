@@ -7,7 +7,7 @@ import { NavigationBar } from "./components/NavigationBar"
 const App = () => {
   return (
     <div>
-      {/* <NavigationBar /> */}
+      <NavigationBar />
       <Home />
       <Services />
       <About />

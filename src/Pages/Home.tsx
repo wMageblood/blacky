@@ -1,4 +1,3 @@
-import ofis from "../assets/ofis.png"
 import dog from "../assets/home-dog.png"
 import blacky from "../assets/blacky.jpg"
 import roberto from "../assets/roberto.png"
@@ -10,7 +9,7 @@ import { Hospital, Star } from "lucide-react";
 export const Home = () => {
 
   return (
-    <div className='my-6'>
+    <div id="inicio" className='my-6'>
       <div className={`bg-[#019099] w-[85%] md:w-[60%] relative mx-auto p-4 overflow-hidden rounded-xl`}>
         <div className="absolute inset-0 grid grid-cols-6 place-items-center">
           {BACKGROUND_ICONS.map((Icon, index) => (
@@ -19,13 +18,6 @@ export const Home = () => {
               className="w-12 h-12 text-red opacity-10"
             />
           ))}
-        </div>
-        <div className='flex justify-between relative z-2'>
-          <img className='w-35' src={ofis}/>
-          <div className=''>
-            <button className='bg-[#E9E9E9] rounded-full px-4 py-2 font-semibold tracking-tighter transition duration-300 shadow-3xl mr-3 hover:bg-rose-400'>Servicios</button>
-            <button onClick={() => openWhatsapp("Hola, me gustaría agendar una cita para mi mascota.")} className='bg-[#E9E9E9] rounded-full px-4 py-2 font-semibold tracking-tighter transition duration-300 shadow-3xl hover:bg-green-400'>Agenda Cita</button>
-          </div>
         </div>
         <div className='flex justify-between z-2'>
           <div className='my-auto mx-auto text-center text-[#e9e9e9]'>
