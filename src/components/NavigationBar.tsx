@@ -18,7 +18,9 @@ export const NavigationBar = () => {
         <div className='flex justify-end'>
           <div className='flex border border-[#101d21] rounded-md px-2 py-1 items-center justify-center mr-2 group hover:border-[#019099] hover:bg-[#019099] transition duration-100'>
             <PhoneIncoming className='text-[#101d21] group-hover:text-white group-hover:bg-[019099]' />
-            <button className='font-Geist font-semibold px-3 py-1 rounded-sm text-[#101d21] group-hover:text-white group-hover:bg-[019099]'>Llámanos</button>
+            <button onClick={() => {
+              window.location.href = "tel:+523338086856"
+            }} className='font-Geist font-semibold px-3 py-1 rounded-sm text-[#101d21] group-hover:text-white group-hover:bg-[019099]'>Llámanos</button>
           </div>
           <div className='flex bg-[#019099] rounded-md px-2 py-1 items-center justify-center group hover:bg-[#f2f6f8] border border-[#019099] transition duration-100 hover:border-[#101d21]'>
             <CalendarCheck className='text-[#f2f6f8] group-hover:text-[#101d21] group-hover:bg-[#f2f6f8]  transition duration-100' />
