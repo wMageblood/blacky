@@ -5,24 +5,29 @@ import { openWhatsapp } from "../utility/openWhatsapp.ts";
 export const ServicesDetailed = () => {
   return (
     <>
-    <h1 className='text-3xl font-bold mt-10'>Nuestros servicios</h1>
-      {servicesDetailed.map(({serviceName, serviceDescription, serviceIcon, message}, index) =>
-        <div className='grid grid-cols-1 md:grid-cols-3 gap-4 bg-[#e8f5f0] px-4 py-6'>
-          <div className={`col-span-2 ${index % 2 !== 0 ? "md:order-2" : ""} relative flex flex-col`}>
-            <h1 className={`font-semibold ${index % 2 !== 0 ? "ml-3" : ""} tracking-tighter mb-5 text-2xl`}>{serviceName}</h1>
-            <p className={`${index % 2 !== 0 ? "ml-3" : ""}`}>{serviceDescription}</p>
-            {/* <div className={`absolute ${index % 2 !== 0 ? "bottom-[0%] right-[1%]" : "bottom-[0%] left-[1%]"}`}>
-              {serviceIcon}
-            </div> */}
-            <div className={`flex mt-auto ${index % 2 !== 0 ? "md:mx-0 md:ml-auto" : "md:mx-0 md:mr-auto"} whitespace-nowrap`}>
-                <button onClick={() => openWhatsapp(message)} className='rounded-full bg-[#e9e9e9] mt-5 md:mx-0 hover:bg-[#b69f9f] w-[85%] md:w-auto mx-auto transition duration-300 border border-black font-semibold px-4 py-1'>Reserva {serviceName}</button>
+      <div className='mb-10 text-center'>
+        <h1 className='text-3xl mb-5 font-bold mt-10 font-Montserrat tracking-tighter'>Nuestros servicios</h1>
+        <p className='font-Montserrat'>Cuidado integral pensado para cada etapa de la vida de tu mascota, <br/> con un equipo profesional que la trata como en casa.</p>
+      </div>
+      {servicesDetailed.map(({serviceName, serviceDescription, serviceIcon: Icon, message}, index) => (
+        <div className='grid grid-cols-1 md:grid-cols-2 md:gap-3 md:mb-8 mb-16 gap-1'>
+          <div className={`flex flex-col h-full font-Montserrat px-10 py-2 bg-white border border-[#d7e0e1] shadow-soft-blur ${index % 2 !== 0 ? "md:order-2 md:rounded-br-xl md:rounded-tr-xl md:rounded-tl-none rounded-tl-xl rounded-tr-xl" : "md:rounded-bl-xl md:rounded-tl-xl md:rounded-tr-none rounded-bl-none rounded-tr-xl rounded-tl-xl"}`}>
+            <h1 className='my-5 text-2xl font-semibold'>{serviceName}</h1>
+            <p className='pb-5 text-sm'>{serviceDescription}</p>
+
+            <div className='flex group w-fit items-stretch mb-5 mt-auto'>
+              <div className='flex items-center justify-center px-2 bg-[#E1F3EF] border mr-0.5 border-[#004444] rounded-sm rounded-tr-none rounded-br-none group-hover:bg-[#004444] transition duration-300'>
+                {Icon}
+              </div>
+              <button className='bg-[#e1f3ef] group-hover:bg-[#004444] group-hover:text-white px-3 py-1 text-sm uppercase font-semibold tracking-tighter text-[#004444] transition duration-600 rounded-sm border border-[#004444] rounded-tl-none rounded-bl-none'>Agenda {serviceName}</button>
             </div>
           </div>
-          <div className={`${index % 2 !== 0 ? "order-1" : ""} relative`}>
-            <img className='col-span-1 w-full h-full object-cover rounded-sm' src={filomeno}/>
+
+          <div className='h-full'>
+            <img className={`shadow-soft-blur object-cover w-full h-full ${index % 2 !== 0 ? "md:rounded-bl-xl md:rounded-br-none md:rounded-tl-xl rounded-bl-xl rounded-br-xl" : "md:rounded-tr-xl md:rounded-br-xl md:rounded-bl-none rounded-bl-xl rounded-br-xl"}`} src={filomeno} />
           </div>
         </div>
-      )}
+      ))}
     </>
   );
 };

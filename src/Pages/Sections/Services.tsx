@@ -6,7 +6,7 @@ import biggieAfter from "../../assets/biggie-after.png"
 export const Services = () => {
   return (
     <div className='my-15'>
-      <div className='grid grid-cols-1 *:rounded-xl w-[85%] md:w-[60%] mx-auto gap-6'>
+      <div className='mx-auto w-[85%] md:w-[60%]'>
         <ServicesDetailed />
       </div>
         <h1 className='text-3xl tracking-tighter font-semibold text-center mt-15'>Antes y después</h1>

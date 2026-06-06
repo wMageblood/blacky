@@ -5,8 +5,7 @@ import roberto from "../assets/roberto.png"
 import { ServicesCard } from "../components/ServicesCard.tsx";
 import { openWhatsapp } from "../utility/openWhatsapp.ts";
 import { BACKGROUND_ICONS } from "../components/BackgroundIcons.tsx"
-
-
+import { Hospital, Star } from "lucide-react";
 
 export const Home = () => {
 
@@ -39,25 +38,43 @@ export const Home = () => {
         </div>
       </div>
 
-      <div className='my-10 w-[85%] md:w-[60%] mx-auto'>
+      <div className='my-10 w-[85%] md:w-[62%] mx-auto'>
+        <div className='my-10'>
+          <p className='text-center tracking-widest font-bold text-[#019099] text-sm'> NUESTROS SERVICIOS </p>
+          <h1 className='text-center text-[#101d21] text-3xl font-bold tracking-tight font-Montserrat'>Todo lo que tu mascota necesita.</h1>
+        </div>
         <ServicesCard />
       </div>
 
-      <div className='bg-[#F1E3E3] shadow-soft-blur w-[85%] md:w-[60%] mx-auto p-5 mb-15'>
-        <div className='grid grid-cols-1 md:grid-cols-2'>
+      <div className='bg-[#fed2d0] border border-[#e2aca8] relative shadow-soft-blur rounded-xl w-[85%] md:w-[60%] mx-auto py-20 px-15 mb-15'>
+        <div className="absolute inset-0 py-10 grid grid-cols-3 md:grid-cols-6 place-items-center">
+          {BACKGROUND_ICONS.toReversed().map((Icon, index) => (
+            <Icon
+              key={index}
+              className="w-14 h-14 text-red opacity-5"
+            />
+          ))}
+        </div>
+        <div className='grid grid-cols-1 md:grid-cols-2 z-1'>
           <div className='flex flex-col'>
-            <h1 className='text-4xl font-semibold tracking-tighter mb-10'>Experiencias magnificas <br/> para tu mascota aseguradas.</h1>
-            <p className='mb-5'>
+            <h1 className='text-4xl font-bold tracking-tighter mb-10 font-Montserrat text-[#6b141f] z-1'>Experiencias magnificas <br/> para tu mascota, aseguradas.</h1>
+            <p className='mb-5 font-Montserrat font-500 z-1'>
               En Ofis Pet creemos que cada mascota merece atención, cuidado y cariño de la más alta calidad. Como una empresa familiar e independiente, nos comprometemos a brindar un servicio cercano y profesional, desde estéticas y consultas hasta procedimientos especializados.
             </p>
-            <div className='md:mt-auto mx-auto md:mx-0 mt-5'>
-              <button className='px-5 py-2 mx-2 rounded-full border-2 border-black font-semibold bg-[#D95C5C] hover:bg-[#9E3434] hover:text-white hover:border-[#f1e3e3] transition duration-300'>Agenda consulta médica</button>
-              <button className='px-8 py-2 my-4 md:my-2 mx-2 rounded-full border-2 border-black font-semibold bg-[#D95C5C] hover:bg-[#9E3434] hover:text-white hover:border-[#f1e3e3] transition duration-300'>Agenda estetica</button>
+            <div className='md:mb-auto flex flex-col mt-5 text-sm z-1 mb-10'>
+              <div className='flex w-fit group mb-1'>
+                <Star className='p-2 group-hover:bg-[#9E3434] rounded-sm text-[#EA6568] group-hover:text-[#F2F6F8] bg-[#fbc3c3] border border-[#e2aca8] w-10 h-10 mr-1 transition duration-300' />
+                <button className='px-5 py-2 uppercase group-hover:bg-[#9E3434] rounded-sm border border-[#e2aca8] mr-2 font-Montserrat tracking-tighter font-semibold bg-[#fbc3c3] hover:bg-[#9E3434] text-[#EA6568] group-hover:text-white hover:border-[#f1e3e3] transition duration-300'>Agenda estetica</button>
+              </div>
+              <div className='flex w-fit group'>
+                <Hospital className='p-2 group-hover:bg-[#9E3434] rounded-sm text-[#EA6568] bg-[#fbc3c3] group-hover:text-[#F2F6F8] border border-[#e2aca8] w-10 h-10 mr-1 transition duration-300' />
+                <button className='px-5 py-2 uppercase group-hover:bg-[#9E3434] rounded-sm border border-[#e2aca8] mr-2 font-Montserrat tracking-tighter font-semibold bg-[#fbc3c3] hover:bg-[#9E3434] text-[#EA6568] group-hover:text-white hover:border-[#f1e3e3] transition duration-300'>Agenda consulta médica</button>
+              </div>
             </div>
           </div>
-          <div className='flex md:ml-auto mx-auto my-5 gap-4'>
+          <div className='flex md:ml-10 mx-auto gap-4 mt-5 md:mt-0'>
             <img className='float-1 shadow-soft-blur border-2 border-[#D95C5C] w-40 h-55 md:w-50 md:h-75 rounded-tr-4xl rounded-bl-4xl rounded-tl-xl rounded-br-xl' src={blacky}/>
-            <img className='float-2 shadow-soft-blur border-2 border-[#D95C5C] w-40 h-55 md:w-48 md:h-75 rounded-tl-4xl rounded-br-4xl rounded-tr-xl rounded-bl-xl' src={roberto}/>
+            <img className='float-2 shadow-soft-blur border-2 border-[#D95C5C] w-40 h-55 md:w-48 md:h-75 md:mt-30 rounded-tl-4xl rounded-br-4xl rounded-tr-xl rounded-bl-xl' src={roberto}/>
           </div>
         </div>
       </div>
