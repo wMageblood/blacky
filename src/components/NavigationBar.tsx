@@ -3,7 +3,7 @@ import { PhoneIncoming, CalendarCheck } from "lucide-react";
 export const NavigationBar = () => {
   return (
     <header className="md:w-[60%] w-[85%] mx-auto mt-5">
-      <nav className="grid-cols-3 h-16 items-center justify-between mx-auto hidden xl:grid">
+      <nav className="grid-cols-3 h-16 items-center justify-between mx-auto xl:grid">
         <div className='justify-start'>
           <h1>Logo</h1>
         </div>
