@@ -3,24 +3,15 @@ import blacky from "../assets/blacky.jpg"
 import roberto from "../assets/roberto.png"
 import { ServicesCard } from "../components/ServicesCard.tsx";
 import { openWhatsapp } from "../utility/openWhatsapp.ts";
-import { BACKGROUND_ICONS } from "../components/BackgroundIcons.tsx"
 import { Hospital, Star } from "lucide-react";
-import mainBannerBg from "../assets/main-banner-bg.png";
-import secondBannerBg from "../assets/second-banner-bg.png"
+import mainBannerBg from "../assets/blue-giant-bg.png";
+import secondBannerBg from "../assets/pink-giant-bg.png"
 
 export const Home = () => {
 
-  const ICON_COLORS = [
-  "#E58A84",
-  "#F09A95",
-  "#EFA29D",
-  "#D96F68",
-  "#F4B6B2",
-];
-
   return (
     <div id="inicio" className='my-6'>
-      <div style={{ backgroundImage: `url(${mainBannerBg})`, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat",}} className={`border border-[#006065] w-[85%] md:w-[60%] relative grid grid-cols-1 md:grid-cols-2 mx-auto p-4 overflow-hidden rounded-xl`}>
+      <div style={{ backgroundImage: `url(${mainBannerBg})`, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat"}} className={`border border-[#006065] w-[85%] md:w-[60%] relative grid grid-cols-1 md:grid-cols-2 mx-auto p-4 overflow-hidden rounded-xl`}>
         <div className='flex justify-between z-2'>
           <div className='my-auto mx-auto text-center text-[#e9e9e9]'>
             <h1 className='xl:text-4xl text-3xl font-semibold tracking-tighter mb-5 filter-[drop-shadow(1px_1px_3px_black)_drop-shadow(0px_0px_0px_black)]'>Por nuestras mascotas, <br/> para siempre.</h1>
@@ -39,7 +30,7 @@ export const Home = () => {
         </div>
         <ServicesCard />
       </div>
-      <div style={{ backgroundImage: `url(${secondBannerBg})`, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat",}}  className='border border-[#e2aca8] relative shadow-soft-blur rounded-xl w-[85%] md:w-[60%] mx-auto py-20 px-15 mb-15'>
+      <div style={{ backgroundImage: `url(${secondBannerBg})`, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat"}}  className='border border-[#e2aca8] relative shadow-soft-blur rounded-xl w-[85%] md:w-[60%] mx-auto py-20 px-15 mb-15'>
         <div className='grid grid-cols-1 md:grid-cols-2 z-1'>
           <div className='flex flex-col'>
             <h1 className='text-4xl font-bold tracking-tighter mb-10 font-Montserrat text-[#6b141f] z-1'>Experiencias magnificas <br/> para tu mascota, aseguradas.</h1>
@@ -47,7 +38,7 @@ export const Home = () => {
               En Ofis Pet creemos que cada mascota merece atención, cuidado y cariño de la más alta calidad. Como una empresa familiar e independiente, nos comprometemos a brindar un servicio cercano y profesional, desde estéticas y consultas hasta procedimientos especializados.
             </p>
             <div className='md:mb-auto flex flex-col w-fit items-stretch mt-5 text-sm z-1 mb-10'>
-              <div className='flex w-fit group mb-[2px]'>
+              <div className='flex w-fit group mb-0.5'>
                 <div className='flex items-center justify-center px-2 bg-[#fbc3c3] border mr-0.5 border-[#e2aca8] rounded-sm rounded-tr-none text-[#EA6568] rounded-br-none group-hover:bg-[#9e3434] transition duration-300'>
                   <Star />
                 </div>

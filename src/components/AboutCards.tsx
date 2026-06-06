@@ -1,9 +1,9 @@
-import { aboutData } from "../constants/aboutCard";
+import { ABOUT_DATA } from "../constants/aboutCard";
 
 export const AboutCard = () => {
   return (
     <div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-7'>
-      {aboutData.map(({title, description, descriptionIcon: Icon, image}) =>
+      {ABOUT_DATA.map(({title, description, descriptionIcon: Icon, image}) =>
       <div className='bg-[#f1e3e3] shadow-soft-blur rounded-t-xl rounded-b-xl border border-[#c1bcb1]'>
         <div className='relative'>
           <img className='rounded-t-xl flex' src={image} />
