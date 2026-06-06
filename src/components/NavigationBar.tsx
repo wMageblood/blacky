@@ -1,9 +1,10 @@
 import { PhoneIncoming, CalendarCheck } from "lucide-react";
+import { openWhatsapp } from "../utility/openWhatsapp";
 
 export const NavigationBar = () => {
   return (
     <header className="md:w-[60%] w-[85%] mx-auto mt-5">
-      <nav className="grid-cols-3 h-16 items-center justify-between mx-auto xl:grid">
+      <nav className="grid-cols-3 h-16 items-center justify-between mx-auto hidden xl:grid">
         <div className='justify-start'>
           <h1>Logo</h1>
         </div>
@@ -24,7 +25,7 @@ export const NavigationBar = () => {
           </div>
           <div className='flex bg-[#019099] rounded-md px-2 py-1 items-center justify-center group hover:bg-[#f2f6f8] border border-[#019099] transition duration-100 hover:border-[#101d21]'>
             <CalendarCheck className='text-[#f2f6f8] group-hover:text-[#101d21] group-hover:bg-[#f2f6f8]  transition duration-100' />
-            <button className='font-Geist font-semibold px-3 py-1 rounded-sm text-[#f2f6f8] group-hover:text-[#101d21] group-hover:bg-[#f2f6f8]  transition duration-100'>Agenda Cita</button>
+            <button onClick={() => openWhatsapp('Hola, me gustaría agendar una cita')} className='font-Geist font-semibold px-3 py-1 rounded-sm text-[#f2f6f8] group-hover:text-[#101d21] group-hover:bg-[#f2f6f8]  transition duration-100'>Agenda Cita</button>
           </div>
         </div>
       </nav>
