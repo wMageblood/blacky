@@ -53,20 +53,24 @@ export const Home = () => {
             <p className='mb-5 font-Montserrat font-500 z-1'>
               En Ofis Pet creemos que cada mascota merece atención, cuidado y cariño de la más alta calidad. Como una empresa familiar e independiente, nos comprometemos a brindar un servicio cercano y profesional, desde estéticas y consultas hasta procedimientos especializados.
             </p>
-            <div className='md:mb-auto flex flex-col mt-5 text-sm z-1 mb-10'>
+            <div className='md:mb-auto flex flex-col w-fit items-stretch mt-5 text-sm z-1 mb-10'>
               <div className='flex w-fit group mb-1'>
-                <Star className='p-2 group-hover:bg-[#9E3434] rounded-sm text-[#EA6568] group-hover:text-[#F2F6F8] bg-[#fbc3c3] border border-[#e2aca8] w-10 h-10 mr-1 transition duration-300' />
+                <div className='flex items-center justify-center px-2 bg-[#fbc3c3] border mr-0.5 border-[#e2aca8] rounded-sm rounded-tr-none text-[#EA6568] rounded-br-none group-hover:bg-[#9e3434] transition duration-300'>
+                  <Star />
+                </div>
                 <button className='px-5 py-2 uppercase group-hover:bg-[#9E3434] rounded-sm border border-[#e2aca8] mr-2 font-Montserrat tracking-tighter font-semibold bg-[#fbc3c3] hover:bg-[#9E3434] text-[#EA6568] group-hover:text-white hover:border-[#f1e3e3] transition duration-300'>Agenda estetica</button>
               </div>
               <div className='flex w-fit group'>
-                <Hospital className='p-2 group-hover:bg-[#9E3434] rounded-sm text-[#EA6568] bg-[#fbc3c3] group-hover:text-[#F2F6F8] border border-[#e2aca8] w-10 h-10 mr-1 transition duration-300' />
+                <div className='flex items-center justify-center px-2 bg-[#fbc3c3] border mr-0.5 border-[#e2aca8] rounded-sm rounded-tr-none text-[#EA6568] rounded-br-none group-hover:bg-[#9e3434] transition duration-300'>
+                  <Hospital />
+                </div>
                 <button className='px-5 py-2 uppercase group-hover:bg-[#9E3434] rounded-sm border border-[#e2aca8] mr-2 font-Montserrat tracking-tighter font-semibold bg-[#fbc3c3] hover:bg-[#9E3434] text-[#EA6568] group-hover:text-white hover:border-[#f1e3e3] transition duration-300'>Agenda consulta médica</button>
               </div>
             </div>
           </div>
-          <div className='flex md:ml-10 mx-auto gap-4 mt-5 md:mt-0'>
-            <img className='float-1 shadow-soft-blur border-2 border-[#D95C5C] w-40 h-55 md:w-50 md:h-75 rounded-tr-4xl rounded-bl-4xl rounded-tl-xl rounded-br-xl' src={blacky}/>
-            <img className='float-2 shadow-soft-blur border-2 border-[#D95C5C] w-40 h-55 md:w-48 md:h-75 md:mt-30 rounded-tl-4xl rounded-br-4xl rounded-tr-xl rounded-bl-xl' src={roberto}/>
+          <div className='grid grid-cols-1 md:grid-cols-2 mx-auto md:ml-10 gap-4 mt-5 md:mt-0'>
+            <img className='float-1 shadow-soft-blur border-2 border-[#D95C5C] w-55 h-70 md:w-50 md:h-75 rounded-tr-4xl rounded-bl-4xl rounded-tl-xl rounded-br-xl' src={blacky}/>
+            <img className='float-2 shadow-soft-blur border-2 border-[#D95C5C] w-55 h-70 md:w-48 md:h-75 md:mt-30 rounded-tl-4xl rounded-br-4xl rounded-tr-xl rounded-bl-xl' src={roberto}/>
           </div>
         </div>
       </div>
