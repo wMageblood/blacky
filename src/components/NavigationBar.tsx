@@ -1,12 +1,13 @@
 import { PhoneIncoming, CalendarCheck } from "lucide-react";
 import { openWhatsapp } from "../utility/openWhatsapp";
+import ofislogo from "../assets/ofslogo.png"
 
 export const NavigationBar = () => {
   return (
     <header className="xl:w-[60%] md:w-[80%] w-[85%] mx-auto mt-5">
       <nav className="grid-cols-3 h-16 items-center justify-between mx-auto hidden xl:grid">
         <div className='justify-start'>
-          <h1>Logo</h1>
+          <img className='w-40 h-20' src={ofislogo} />
         </div>
 
         <ul className="flex gap-6 justify-center *:font-Geist *:tracking-tighter *:font-semibold">
