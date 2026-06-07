@@ -1,4 +1,4 @@
-import dog from "../assets/home-dog.png"
+import dog from "../assets/doggogood.png"
 import blacky from "../assets/blacky.jpg"
 import roberto from "../assets/roberto.png"
 import { ServicesCard } from "../components/ServicesCard.tsx";

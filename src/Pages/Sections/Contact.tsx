@@ -7,12 +7,23 @@ import { openWhatsapp } from "../../utility/openWhatsapp";
 export const Contact = () => {
   return (
     <div id='contacto' className='mb-15'>
+      <div className='my-10'>
+        <p className='text-center tracking-widest font-bold text-[#cdb4db] filter-[drop-shadow(0px_0px_1px_black)_drop-shadow(0px_0px_0px_black)] text-sm'> CONTACTO </p>
+        <h1 className='text-center text-[#101d21] text-3xl font-bold tracking-tight font-Montserrat'>¡Llámanos o envíanos un mensaje!</h1>
+      </div>
       <div className='grid grid-cols-1 md:grid-cols-3 w-[85%] md:w-[80%] mx-auto md:gap-4 gap-2'>
-        <div className='col-span-1 md:col-span-2 bg-[#efe8f5] border border-[#9d8aa7] flex justify-between px-4 py-6 shadow-soft-blur rounded-tl-xl rounded-tr-xl md:rounded-tr-none'>
+        {/* <div className='col-span-1 md:col-span-2 bg-[#efe8f5] border border-[#9d8aa7] flex justify-between px-4 py-6 shadow-soft-blur rounded-tl-xl rounded-tr-xl md:rounded-tr-none'>
           <span className='md:text-6xl text-4xl font-semibold tracking-tighter my-auto mx-auto font-Montserrat'>Contáctanos:</span>
         </div>
         <div className=''>
           <img className='shadow-soft-blur w-full h-full border border-[#9d8aa7] md:rounded-bl-none md:rounded-tr-xl md:rounded-tl-none md:rounded-br-none rounded-tl-none rounded-tr-none rounded-bl-none rounded-br-none object-cover block rounded-xl' width={400} src={filomeno}/>
+        </div> */}
+        <div className='relative max-h-100'>
+          <img className='shadow-soft-blur border border-[#9d8aa7] w-full h-full object-cover block md:rounded-bl-xl rounded-bl-none' src={jose}/>
+          <button onClick={() => openWhatsapp('Hola, me gustaría agendar una cita.')} className='z-10 uppercase absolute px-8 py-2 mx-2 bg-[#efe8f5] border border-[#bb75e0] font-Montserrat text-[#7f5197] font-semibold rounded-sm hover:bg-[#bb75e0] hover:text-black transition duration-300 bottom-5 right-4'>Agenda una cita</button>
+        </div>
+        <div className='col-span-1 md:col-span-2 w-full max-h-100'>
+          <GoogleMapLocation />
         </div>
         <div className='bg-[#cdb4db] border border-[#9d8aa7] px-4 py-6 relative overflow-hidden shadow-soft-blur'>
           <h1 className='tracking-tighter font-bold mb-2 text-xl font-Montserrat'>Télefonos:</h1>
@@ -28,13 +39,6 @@ export const Contact = () => {
           <h1 className='tracking-tighter font-bold mb-2 text-xl font-Montserrat'>Dirección</h1>
           <MapPinHouse className='z-0 absolute top-2 right-2 w-15 h-15 text-[#e9e9e9]'/>
           <p className='ml-5 relative z-10 font-Montserrat'> Avenida General Ramón Corona 2411-C San Juan de Ocotán.</p>
-        </div>
-        <div className='relative max-h-100'>
-          <img className='shadow-soft-blur border border-[#9d8aa7] w-full h-full object-cover block md:rounded-bl-xl rounded-bl-none' src={jose}/>
-          <button onClick={() => openWhatsapp('Hola, me gustaría agendar una cita.')} className='z-10 uppercase absolute px-8 py-2 mx-2 bg-[#efe8f5] border border-[#bb75e0] font-Montserrat text-[#7f5197] font-semibold rounded-sm hover:bg-[#bb75e0] hover:text-black transition duration-300 bottom-5 right-4'>Agenda una cita</button>
-        </div>
-        <div className='col-span-1 md:col-span-2 w-full max-h-100'>
-          <GoogleMapLocation />
         </div>
       </div>
     </div>
