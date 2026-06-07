@@ -1,4 +1,3 @@
-import filomeno from "../assets/filomeno.png"
 import {UserStar, SquareActivity, BicepsFlexed, FlagTriangleLeft, CandlestickChartIcon, BookCheck } from "lucide-react";
 import * as DOGS from "../assets/serviceDogs"
 

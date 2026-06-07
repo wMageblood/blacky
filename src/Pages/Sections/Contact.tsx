@@ -7,7 +7,7 @@ import { openWhatsapp } from "../../utility/openWhatsapp";
 export const Contact = () => {
   return (
     <div id='contacto' className='mb-15'>
-      <div className='grid grid-cols-1 md:grid-cols-3 w-[85%] md:w-[60%] mx-auto md:gap-4 gap-2'>
+      <div className='grid grid-cols-1 md:grid-cols-3 w-[85%] md:w-[80%] mx-auto md:gap-4 gap-2'>
         <div className='col-span-1 md:col-span-2 bg-[#efe8f5] border border-[#9d8aa7] flex justify-between px-4 py-6 shadow-soft-blur rounded-tl-xl rounded-tr-xl md:rounded-tr-none'>
           <span className='md:text-6xl text-4xl font-semibold tracking-tighter my-auto mx-auto font-Montserrat'>Contáctanos:</span>
         </div>

@@ -11,7 +11,7 @@ export const Home = () => {
 
   return (
     <div id="inicio" className='my-6'>
-      <div style={{ backgroundImage: `url(${mainBannerBg})`, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat"}} className={`border border-[#006065] w-[85%] md:w-[60%] relative grid grid-cols-1 md:grid-cols-2 mx-auto p-4 overflow-hidden rounded-xl`}>
+      <div style={{ backgroundImage: `url(${mainBannerBg})`, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat"}} className={`border border-[#006065] w-[85%] md:w-[80%] relative grid grid-cols-1 md:grid-cols-2 mx-auto p-4 overflow-hidden rounded-xl`}>
         <div className='flex justify-between z-2'>
           <div className='my-auto mx-auto text-center text-[#e9e9e9]'>
             <h1 className='xl:text-4xl text-3xl font-semibold tracking-tighter mb-5 filter-[drop-shadow(1px_1px_3px_black)_drop-shadow(0px_0px_0px_black)]'>Por nuestras mascotas, <br/> para siempre.</h1>
@@ -23,15 +23,15 @@ export const Home = () => {
           </div>
       </div>
 
-      <div className='my-10 w-[85%] md:w-[62%] mx-auto'>
+      <div className='my-10 w-[85%] md:w-[82%] mx-auto'>
         <div className='my-10'>
           <p className='text-center tracking-widest font-bold text-[#019099] text-sm'> NUESTROS SERVICIOS </p>
           <h1 className='text-center text-[#101d21] text-3xl font-bold tracking-tight font-Montserrat'>Todo lo que tu mascota necesita.</h1>
         </div>
         <ServicesCard />
       </div>
-      <div style={{ backgroundImage: `url(${secondBannerBg})`, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat"}}  className='border border-[#e2aca8] relative shadow-soft-blur rounded-xl w-[85%] md:w-[60%] mx-auto py-20 px-15 mb-15'>
-        <div className='grid grid-cols-1 md:grid-cols-2 z-1'>
+      <div style={{ backgroundImage: `url(${secondBannerBg})`, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat"}}  className='border border-[#e2aca8] relative shadow-soft-blur rounded-xl w-[85%] md:w-[80%] mx-auto py-20 px-15'>
+        <div className='grid  grid-cols-1 md:grid-cols-2 z-1'>
           <div className='flex flex-col'>
             <h1 className='text-4xl font-bold tracking-tighter mb-10 font-Montserrat text-[#6b141f] z-1'>Experiencias magnificas <br/> para tu mascota, aseguradas.</h1>
             <p className='mb-5 font-Montserrat font-500 z-1'>
@@ -42,13 +42,13 @@ export const Home = () => {
                 <div className='flex items-center justify-center px-2 bg-[#fbc3c3] border mr-0.5 border-[#e2aca8] rounded-sm rounded-tr-none text-[#EA6568] rounded-br-none group-hover:bg-[#9e3434] transition duration-300'>
                   <Star />
                 </div>
-                <button className='px-5 py-2 uppercase group-hover:bg-[#9E3434] rounded-sm border border-[#e2aca8] mr-2 font-Montserrat tracking-tighter font-semibold bg-[#fbc3c3] hover:bg-[#9E3434] text-[#EA6568] group-hover:text-white hover:border-[#f1e3e3] transition duration-300'>Agenda estetica</button>
+                <button onClick={() => openWhatsapp('Hola, me gustaría agendar una estética')} className='px-5 py-2 uppercase group-hover:bg-[#9E3434] rounded-sm border border-[#e2aca8] mr-2 font-Montserrat tracking-tighter font-semibold bg-[#fbc3c3] hover:bg-[#9E3434] text-[#EA6568] group-hover:text-white hover:border-[#f1e3e3] transition duration-300'>Agenda estética</button>
               </div>
               <div className='flex w-fit group'>
                 <div className='flex items-center justify-center px-2 bg-[#fbc3c3] border mr-0.5 border-[#e2aca8] rounded-sm rounded-tr-none text-[#EA6568] rounded-br-none group-hover:bg-[#9e3434] transition duration-300'>
                   <Hospital />
                 </div>
-                <button className='px-5 py-2 uppercase group-hover:bg-[#9E3434] rounded-sm border border-[#e2aca8] mr-2 font-Montserrat tracking-tighter font-semibold bg-[#fbc3c3] hover:bg-[#9E3434] text-[#EA6568] group-hover:text-white hover:border-[#f1e3e3] transition duration-300'>Agenda consulta médica</button>
+                <button onClick={() => openWhatsapp('Hola, me gustaría agendar una Consulta Médica')} className='px-5 py-2 uppercase group-hover:bg-[#9E3434] rounded-sm border border-[#e2aca8] mr-2 font-Montserrat tracking-tighter font-semibold bg-[#fbc3c3] hover:bg-[#9E3434] text-[#EA6568] group-hover:text-white hover:border-[#f1e3e3] transition duration-300'>Agenda consulta médica</button>
               </div>
             </div>
           </div>
