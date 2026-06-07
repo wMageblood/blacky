@@ -3,38 +3,38 @@ import * as DOGS from "../assets/serviceDogs"
 
 export const ABOUT_DATA = [
   {
-    title: 'Quienes somos?',
-    description: 'Ofrecemos atención veterinaria integral para el cuidado de tu mascota, brindando servicios de calidad como consultas médicas, vacunación, estética, limpieza dental y guardería. Nuestro equipo trabaja con dedicación para garantizar la salud, bienestar y comodidad de cada animal, ofreciendo un trato profesional y cercano en todo momento. No trabajamos solo para ti, sino contigo, formando un equipo enfocado en el bienestar de nuestras mascotas.',
+    title: 'Conoce Ofis Pet',
+    description: 'Ofrecemos atención veterinaria integral para el cuidado de tu mascota, brindando servicios de calidad como consultas médicas, vacunación, estética, limpieza dental y guardería. Nuestro equipo trabaja con dedicación para garantizar la salud, el bienestar y la comodidad de cada animal, ofreciendo un trato profesional y cercano en todo momento. No trabajamos solo para ti, sino también contigo, formando un equipo enfocado en el bienestar de nuestras mascotas.',
     image: DOGS.shivaDog,
     descriptionIcon: <UserStar className='absolute top-2 left-2 rounded-full bg-[#f1e3e3] border border-[#c1bcb1] w-9 h-9 p-2' />
   },
   {
-    title: 'Cuidados especializados',
-    description: 'Brindamos servicios de estética canina con atención profesional y personalizada, asegurando que tu mascota luzca limpia, saludable y feliz. Nuestro equipo se enfoca en ofrecer una experiencia cómoda y segura, utilizando productos de calidad y técnicas especializadas para el cuidado del pelaje, la piel y la higiene general de cada mascota.',
+    title: 'Estética y bienestar',
+    description: 'Brindamos servicios de estética canina con atención profesional y personalizada, para que tu mascota luzca limpia, saludable y feliz. Nos enfocamos en ofrecer una experiencia cómoda, segura y libre de estrés, utilizando productos de alta calidad y técnicas especializadas que contribuyen al cuidado del pelaje, la piel y el bienestar general de cada mascota.',
     image: DOGS.ucomingDog,
     descriptionIcon: <SquareActivity className='absolute top-2 left-2 rounded-full bg-[#f1e3e3] border border-[#c1bcb1] w-9 h-9  p-2' />
   },
   {
-    title: 'Qué nos motiva',
-    description: 'Lo que nos motiva es el amor y la conexión especial que las personas tienen con sus mascotas. Ver a cada animal sano, feliz y bien cuidado nos impulsa a seguir mejorando cada día. Nos inspira la confianza de las familias que nos eligen y la oportunidad de ser parte del bienestar de sus compañeros de vida, trabajando siempre con dedicación, compromiso y pasión por lo que hacemos.',
+    title: 'Lo que nos motiva',
+    description: 'Es el amor y la conexión especial que las personas comparten con sus mascotas. Ver a cada animal sano, feliz y bien cuidado nos impulsa a mejorar cada día. Nos inspira la confianza de las familias que nos eligen y la oportunidad de contribuir al bienestar de sus compañeros de vida, trabajando siempre con dedicación, compromiso y pasión por lo que hacemos.',
     image: DOGS.graynotGrayDog,
     descriptionIcon: <BicepsFlexed className='absolute top-2 left-2 rounded-full bg-[#f1e3e3] border border-[#c1bcb1] w-9 h-9  p-2' />
   },
   {
-    title: 'Nuestro futuro',
-    description: 'Nuestro futuro está enfocado en seguir creciendo como un espacio de confianza para el cuidado integral de las mascotas. Como empresa independiente, trabajamos con esfuerzo y dedicación para ofrecer siempre lo mejor a nuestros clientes y sus mascotas. Buscamos ampliar nuestros servicios, incorporar nuevas tecnologías y seguir mejorando la atención que brindamos día a día. Queremos seguir formando una comunidad donde cada familia reciba el apoyo y la orientación que necesita, siempre con el bienestar animal como nuestra mayor prioridad.',
-    image: DOGS.grayLookingDog,
-    descriptionIcon: <FlagTriangleLeft className='absolute top-2 left-2 rounded-full bg-[#f1e3e3] border border-[#c1bcb1] w-9 h-9  p-2' />
-  },
-  {
-    title: 'Nuestros valores',
-    description: 'Nuestros valores se basan en el respeto, la empatía y el compromiso con cada mascota y su familia. Sabemos que no todas las familias son iguales, por eso nos especializamos en brindar una atención personalizada y adaptada a las necesidades de cada una. Trabajamos con responsabilidad, dedicación y amor por lo que hacemos, priorizando siempre el bienestar animal y construyendo relaciones de confianza y cuidado a largo plazo.',
+    title: 'La base de nuestro trabajo',
+    description: 'Nuestros valores se fundamentan en el respeto, la empatía y el compromiso con cada mascota y su familia. Entendemos que cada familia es única, por lo que brindamos una atención personalizada y adaptada a sus necesidades específicas. Trabajamos con responsabilidad, dedicación y pasión por lo que hacemos, priorizando siempre el bienestar animal y construyendo relaciones duraderas basadas en la confianza, el cuidado y el respeto mutuo.',
     image: DOGS.supportDog,
     descriptionIcon: <CandlestickChartIcon className='absolute top-2 left-2 rounded-full bg-[#f1e3e3] border border-[#c1bcb1] w-9 h-9  p-2' />
   },
   {
-    title: 'Un lugar para aprender',
-    description: 'Te acompañamos en cada paso del cuidado de tu nueva mascota. Sabemos que tener un cachorro o un gatito en casa puede generar muchas dudas, por eso estamos aquí para orientarte sobre su alimentación, higiene, vacunas, comportamiento y todo lo esencial que necesitas saber. Nuestro objetivo es ayudarte a brindarles una vida saludable, feliz y bien cuidada desde el primer día.',
+    title: 'Mirando hacia el futuro',
+    description: 'Nuestro futuro está enfocado en consolidarnos como un espacio de confianza para el cuidado integral de las mascotas. Como empresa independiente, trabajamos con esfuerzo y dedicación para ofrecer siempre lo mejor a nuestros clientes y sus compañeros de vida. Aspiramos a ampliar nuestros servicios, incorporar nuevas tecnologías y fortalecer la calidad de la atención que brindamos cada día. Queremos construir una comunidad donde cada familia encuentre el apoyo, la orientación y la confianza que necesita, manteniendo siempre el bienestar animal como nuestra máxima prioridad.',
+    image: DOGS.grayLookingDog,
+    descriptionIcon: <FlagTriangleLeft className='absolute top-2 left-2 rounded-full bg-[#f1e3e3] border border-[#c1bcb1] w-9 h-9  p-2' />
+  },
+  {
+    title: 'Creciendo junto a tu mascota',
+    description: 'Te acompañamos en cada etapa del cuidado de tu nueva mascota. Sabemos que la llegada de un cachorro o un gatito al hogar puede generar muchas dudas, por eso estamos aquí para orientarte sobre su alimentación, higiene, vacunación, comportamiento y todos los aspectos esenciales para su bienestar. Nuestro objetivo es brindarte las herramientas y el acompañamiento necesarios para que pueda disfrutar de una vida saludable, feliz y llena de cuidados desde el primer día.',
     image: DOGS.whatDog,
     descriptionIcon: <BookCheck className='absolute top-2 left-2 rounded-full bg-[#f1e3e3] border border-[#c1bcb1] w-9 h-9  p-2' />
   },

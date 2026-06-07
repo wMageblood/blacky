@@ -10,7 +10,7 @@ export const AboutCard = () => {
           {Icon}
         </div>
         <h1 className='p-4 text-2xl font-semibold tracking-tighter font-Montserrat'>{title}</h1>
-        <p className='px-4 py-1 pb-4 text-sm font-Montserrat font-500'>{description}</p>
+        <p className='px-4 py-1 pb-4 text-sm xl:text-base font-Montserrat font-500'>{description}</p>
       </div>
       )}
     </div>

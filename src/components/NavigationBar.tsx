@@ -3,7 +3,7 @@ import { openWhatsapp } from "../utility/openWhatsapp";
 
 export const NavigationBar = () => {
   return (
-    <header className="md:w-[80%] w-[85%] mx-auto mt-5">
+    <header className="xl:w-[60%] md:w-[80%] w-[85%] mx-auto mt-5">
       <nav className="grid-cols-3 h-16 items-center justify-between mx-auto hidden xl:grid">
         <div className='justify-start'>
           <h1>Logo</h1>

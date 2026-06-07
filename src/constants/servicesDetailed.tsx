@@ -5,7 +5,7 @@ const SERVICES_DETAILED = [
   {
     message: `Hola, quisiera agendar una Consulta Médica para mi hermosa y única mascota, ¿para cuando hay disponibilidad?`,
     serviceName: 'Consultas médicas',
-    serviceDescription: 'Contamos con consultas generales para atender los problemas de salud de tu mascota. Así como contamos con el servicio de consulta dermatológica y oftalmologica para atender los problemas más específicos de tu mascota',
+    serviceDescription: 'Contamos con consultas generales para evaluar, diagnosticar y atender las necesidades de salud de tu mascota en cada etapa de su vida. Nuestro objetivo es brindar una atención cercana y profesional, enfocada en la prevención, el diagnóstico oportuno y el tratamiento adecuado de diversas condiciones. Además, ofrecemos consultas especializadas en dermatología y oftalmología para atender problemas específicos relacionados con la piel, el pelaje y la salud ocular.',
     serviceIcon: <Stethoscope className='w-4 h-4 text-[#004444] group-hover:text-white' />,
     serviceImage: DOGS.supportDog
   },
@@ -44,7 +44,6 @@ const SERVICES_DETAILED = [
     serviceIcon: <Hospital className='w-4 h-4 text-[#004444] group-hover:text-white' />,
     serviceImage: DOGS.cirugiaDog
   },
-
 ];
 
 export default SERVICES_DETAILED;
