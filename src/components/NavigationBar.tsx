@@ -30,6 +30,7 @@ export const NavigationBar = () => {
           </div>
         </div>
       </nav>
+
     </header>
   )
 };
