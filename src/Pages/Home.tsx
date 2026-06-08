@@ -53,7 +53,7 @@ export const Home = () => {
             </div>
           </div>
           <div className='grid grid-cols-1 md:grid-cols-2 mx-auto md:ml-10 gap-4 mt-5 md:mt-0'>
-            <img className='float-1 shadow-soft-blur border-2 border-[#D95C5C] w-55 h-70 md:w-50 md:h-75 xl:w-60 xl:h-85 xl:ml-15 rounded-tr-4xl rounded-bl-4xl rounded-tl-xl rounded-br-xl' src={blacky}/>
+            <img className='float-1 shadow-soft-blur border-2 border-[#D95C5C] w-55 h-70 md:w-50 md:h-75 xl:w-60 xl:h-85 xl:ml-2 rounded-tr-4xl rounded-bl-4xl rounded-tl-xl rounded-br-xl' src={blacky}/>
             <img className='float-2 shadow-soft-blur border-2 border-[#D95C5C] w-55 h-70 md:w-48 md:h-75 xl:w-60 xl:h-85 xl:ml-auto md:mt-15 rounded-tl-4xl rounded-br-4xl rounded-tr-xl rounded-bl-xl' src={roberto}/>
           </div>
         </div>
