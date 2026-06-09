@@ -1,8 +1,7 @@
-import { GoogleMapLocation } from "../../components/iframes/GoogleMapLocation";
-import { PhoneIncoming, ClockCheck, MapPinHouse } from "lucide-react";
-import filomeno from "../../assets/filomeno.png"
-import jose from "../../assets/jose.png"
+import { contactDog } from "../../assets/images"
 import { openWhatsapp } from "../../utility/openWhatsapp";
+import { PhoneIncoming, ClockCheck, MapPinHouse } from "lucide-react";
+import { GoogleMapLocation } from "../../components/iframes/GoogleMapLocation";
 
 export const Contact = () => {
   return (
@@ -13,26 +12,26 @@ export const Contact = () => {
       </div>
       <div className='grid grid-cols-1 md:grid-cols-3 w-[85%] md:w-[80%] mx-auto md:gap-4 gap-2'>
         <div className='relative max-h-100'>
-          <img className='shadow-soft-blur border border-[#9d8aa7] w-full h-full object-cover block md:rounded-tl-xl rounded-bl-none' src={jose}/>
-          <button onClick={() => openWhatsapp('Hola, me gustaría agendar una cita.')} className='z-10 uppercase absolute px-8 py-2 mx-2 bg-[#efe8f5] border border-[#bb75e0] font-Montserrat text-[#7f5197] font-semibold rounded-sm hover:bg-[#bb75e0] hover:text-black transition duration-300 bottom-5 right-4'>Agenda una cita</button>
+          <img className='shadow-soft-blur border border-contactGridBorder w-full h-full object-cover block md:rounded-tl-xl rounded-bl-none' src={contactDog}/>
+          <button onClick={() => openWhatsapp('Hola, me gustaría agendar una cita.')} className='z-10 about-contact-button'>Agenda una cita</button>
         </div>
         <div className='col-span-1 md:col-span-2 w-full max-h-100'>
           <GoogleMapLocation />
         </div>
-        <div className='bg-[#cdb4db] border border-[#9d8aa7] px-4 py-6 relative overflow-hidden shadow-soft-blur md:rounded-bl-xl'>
-          <h1 className='tracking-tighter font-bold mb-2 text-xl font-Montserrat'>Télefonos:</h1>
-          <PhoneIncoming className='z-0 absolute top-2 right-2 w-15 h-15 text-[#e9e9e9]'/>
-          <p className='ml-5 relative z-10 font-Montserrat'>+52 33 3808 6856 (Whatsapp) <br/> +52 33 3805 3497 (No Whatsapp)</p>
+        <div className='about-grid-details md:rounded-bl-xl'>
+          <h1 className='contact-title'>Télefonos:</h1>
+          <PhoneIncoming className='contact-icon'/>
+          <p className='contact-paragraph'>+52 33 3808 6856 (Whatsapp) <br/> +52 33 3805 3497 (No Whatsapp)</p>
         </div>
-        <div className='bg-[#cdb4db] border border-[#9d8aa7] relative px-4 py-6 shadow-soft-blur'>
-          <h1 className='tracking-tighter font-bold mb-2 text-xl font-Montserrat'>Horario</h1>
-          <ClockCheck className='z-0 absolute top-2 right-2 w-15 h-15 text-[#e9e9e9]'/>
-          <p className='ml-5 relative z-10 font-Montserrat'>Lunes a Viernes de 09:00 a 19:00 <br/> Sábados de 09:00 a 16:00. </p>
+        <div className='about-grid-details'>
+          <h1 className='contact-title'>Horario</h1>
+          <ClockCheck className='contact-icon'/>
+          <p className='contact-paragraph'>Lunes a Viernes de 09:00 a 19:00 <br/> Sábados de 09:00 a 16:00 </p>
         </div>
-        <div className='bg-[#cdb4db] border border-[#9d8aa7] relative p-6 shadow-soft-blur rounded-br-xl md:rounded-bl-none rounded-bl-xl'>
-          <h1 className='tracking-tighter font-bold mb-2 text-xl font-Montserrat'>Dirección</h1>
-          <MapPinHouse className='z-0 absolute top-2 right-2 w-15 h-15 text-[#e9e9e9]'/>
-          <p className='ml-5 relative z-10 font-Montserrat'> Avenida General Ramón Corona 2411-C San Juan de Ocotán.</p>
+        <div className='about-grid-details rounded-br-xl rounded-bl-xl md:rounded-bl-none'>
+          <h1 className='contact-title'>Dirección</h1>
+          <MapPinHouse className='contact-icon'/>
+          <p className='contact-paragraph'> Avenida General Ramón Corona 2411-C <br/> San Juan de Ocotán</p>
         </div>
       </div>
     </div>

@@ -1,12 +1,5 @@
-import { ReactCompareSlider } from "react-compare-slider";
 import { ServicesDetailed } from "../../components/ServicesDetailed.tsx"
-import biggieBefore from "../../assets/biggie-before.png"
-import biggieAfter from "../../assets/biggie-after.png"
-import robertBefore from "../../assets/robertBefore.png"
-import robertAfter from "../../assets/robertAfter.png"
-import roboAfter from "../../assets/roboAfter.png"
-import roboBefore from "../../assets/roboBefore.png"
-import beforeAfter from "../../assets/beforeAfter.png"
+import beforeAfter from "../../assets/images/before-after.png"
 
 export const Services = () => {
   return (

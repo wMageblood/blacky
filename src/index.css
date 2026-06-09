@@ -4,36 +4,63 @@
 @import "tailwindcss";
 
 :root {
-  background: #E22113;
   background: #f2f6f8;
 }
 
 @theme {
 
-   --color-homeBackground: #1042d8;
-   --color-name: #FFFFFF;
-   --color-name: #FFFFFF;
+  /* HOME SECTION */
+    --color-mainBannerBorder: #006065;
+    --color-mainColorSubTitle: #019099;
+    --color-secondBannerBorder: #E2ACA8;
+    --color-secondBannerTitle: #6B141F;
+    --color-secondBannerButtonBorder: #D98982;
+    --color-secondBannerButtonTitle: #B83845;
+    --color-secondBannerButtonBackground: #F4B6B2;
+    --color-secondBannerButtonGroupHover: #9e3434;
+  /* HOME SECTION */
+
+  /* CONTACT SECTION */
+    --color-contactGridBorder: #9D8AA7;
+    --color-contactGridBackground: #CDB4DB;
+    --color-contactButtonText: #7F5197;
+    --color-contactButtonBorder: #BB75E0;
+    --color-contactButtonBackground: #EFE8F5;
+  /* CONTACT SECTION */
+
+  /* SERVICES SECTION */
+   --color-servicesCardBorder: #D7E0E1;
+   --color-servicesButtonBorder: #004444;
+   --color-servicesButtonBackground: #E1F3EF;
+  /* SERVICES SECTION */
+
+  /* NAVIGATION BAR */
+   --color-hoverTitle: #636262;
+  /* NAVIGATION BAR */
+
 
    --shadow-3xl: 0 2px 2px hsla(0, 0%, 0%, 1);
    --shadow-blur: 0 6px 15px hsla(0, 0%, 0%, 1);
-   --shadow-soft-blur: 0 6px 10px hsla(0, 0%, 0%, 0.2);
    --shadow-red-3xl: 0 2px 2px hsla(0, 100%, 50%, 1);
-   --shadow-3xl-inset: inset 0 -2px 2px hsla(0, 0%, 0%, 0.1);
+   --shadow-soft-blur: 0 6px 10px hsla(0, 0%, 0%, 0.2);
+
    --inset-shadow-md: inset 0 -1px 2px rgba(0, 0, 0, 0.25);
    --inset-shadow-lg: inset 0 -2px 3px rgba(0, 0, 0, 0.35);
+   --inset-shadow-3xl: inset 0 -2px 2px hsla(0, 0%, 0%, 0.1);
 
-   --font-Montserrat: "Montserrat", sans-serif;
-   --font-Roboto: "Roboto", sans-serif;
    --font-Geist: "Geist", sans-serif;
-    --font-weight-100: 100;
-    --font-weight-200: 200;
-    --font-weight-300: 300;
-    --font-weight-400: 400;
-    --font-weight-500: 500;
-    --font-weight-600: 600;
-    --font-weight-700: 700;
-    --font-weight-800: 800;
-    --font-weight-900: 900;
+   --font-Roboto: "Roboto", sans-serif;
+   --font-Montserrat: "Montserrat", sans-serif;
+
+   --font-weight-100: 100;
+   --font-weight-200: 200;
+   --font-weight-300: 300;
+   --font-weight-400: 400;
+   --font-weight-500: 500;
+   --font-weight-600: 600;
+   --font-weight-700: 700;
+   --font-weight-800: 800;
+   --font-weight-900: 900;
 
 }
 
@@ -57,4 +84,49 @@
 
 .float-2 {
   animation: floating 2.5s ease-in-out infinite 0.8s;
+}
+
+
+.home-red-button {
+  @apply px-5 py-2 uppercase group-hover:bg-secondBannerButtonGroupHover rounded-sm border border-secondBannerButtonBorder rounded-bl-none rounded-tl-none mr-2 font-Montserrat tracking-tighter font-semibold bg-secondBannerButtonBackground hover:bg-secondBannerButtonGroupHover text-secondBannerButtonTitle group-hover:text-white transition duration-300
+}
+
+.home-red-button-support {
+  @apply flex items-center justify-center px-2 bg-secondBannerButtonBackground border mr-0.5 border-secondBannerButtonBorder rounded-sm rounded-tr-none text-secondBannerButtonTitle rounded-br-none group-hover:bg-secondBannerButtonGroupHover transition duration-300 group-hover:text-white
+}
+
+.home-pink-banner-image-one {
+  @apply shadow-soft-blur border-2 border-[#D95C5C] w-55 h-70 md:w-50 md:h-75 xl:w-60 xl:h-85 xl:ml-2 rounded-tr-4xl rounded-bl-4xl rounded-tl-xl rounded-br-xl
+}
+
+.home-pink-banner-image-two {
+  @apply shadow-soft-blur border-2 border-[#D95C5C] w-55 h-70 md:w-48 md:h-75 xl:w-60 xl:h-85 xl:ml-auto md:mt-15 rounded-tl-4xl rounded-br-4xl rounded-tr-xl rounded-bl-xl
+}
+
+.services-contact-button {
+  @apply bg-servicesButtonBackground group-hover:bg-servicesButtonBorder group-hover:text-white px-3 py-1 text-sm uppercase font-semibold tracking-tighter text-servicesButtonBorder transition duration-600 rounded-sm border border-servicesButtonBorder rounded-tl-none rounded-bl-none
+}
+
+.about-grid-details {
+  @apply bg-contactGridBackground border border-contactGridBorder relative px-4 py-6 shadow-soft-blur
+}
+
+.about-contact-button {
+  @apply uppercase absolute px-8 py-2 mx-2 bg-contactButtonBackground border border-contactButtonBorder font-Montserrat text-contactButtonText font-semibold rounded-sm hover:bg-contactButtonBorder hover:text-black transition duration-300 bottom-5 right-4
+}
+
+.contact-title {
+  @apply tracking-tighter relative font-bold mb-2 text-xl font-Montserrat
+}
+
+.contact-icon {
+  @apply z-0 absolute top-2 right-2 w-15 h-15 text-[#e9e9e9]
+}
+
+.contact-paragraph {
+  @apply ml-5 z-10 font-Montserrat
+}
+
+.navigation-bar-links {
+  @apply hover:text-hoverTitle transition duration-300
 }

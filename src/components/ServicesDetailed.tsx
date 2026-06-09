@@ -10,15 +10,15 @@ export const ServicesDetailed = () => {
       </div>
       {SERVICES_DETAILED.map(({serviceName, serviceDescription, serviceIcon: Icon, message, serviceImage}, index) => (
         <div className='grid grid-cols-1 md:grid-cols-2 md:gap-3 md:mb-8 mb-16 gap-1'>
-          <div className={`flex flex-col h-full font-Montserrat px-10 py-2 bg-white border border-[#d7e0e1] shadow-soft-blur ${index % 2 !== 0 ? "md:order-2 md:rounded-br-xl md:rounded-tr-xl md:rounded-tl-none rounded-tl-xl rounded-tr-xl" : "md:rounded-bl-xl md:rounded-tl-xl md:rounded-tr-none rounded-bl-none rounded-tr-xl rounded-tl-xl"}`}>
+          <div className={`flex flex-col h-full font-Montserrat px-10 py-2 bg-white border border-servicesCardBorder shadow-soft-blur ${index % 2 !== 0 ? "md:order-2 md:rounded-br-xl md:rounded-tr-xl md:rounded-tl-none rounded-tl-xl rounded-tr-xl" : "md:rounded-bl-xl md:rounded-tl-xl md:rounded-tr-none rounded-bl-none rounded-tr-xl rounded-tl-xl"}`}>
             <h1 className='my-5 text-2xl font-semibold'>{serviceName}</h1>
             <p className='pb-5 text-sm text-shadow-sm xl:text-base'>{serviceDescription}</p>
 
             <div className='flex group w-fit items-stretch mb-5 mt-auto'>
-              <div className='flex items-center justify-center px-2 bg-[#E1F3EF] border mr-0.5 border-[#004444] rounded-sm rounded-tr-none rounded-br-none group-hover:bg-[#004444] transition duration-300'>
+              <div className='flex items-center justify-center px-2 bg-servicesButtonBackground border mr-0.5 border-servicesButtonBorder rounded-sm rounded-tr-none rounded-br-none group-hover:bg-servicesButtonBorder transition duration-300'>
                 {Icon}
               </div>
-              <button onClick={() => openWhatsapp(message)} className='bg-[#e1f3ef] group-hover:bg-[#004444] group-hover:text-white px-3 py-1 text-sm uppercase font-semibold tracking-tighter text-[#004444] transition duration-600 rounded-sm border border-[#004444] rounded-tl-none rounded-bl-none'>Agenda {serviceName}</button>
+              <button onClick={() => openWhatsapp(message)} className='bg-servicesButtonBackground group-hover:bg-servicesButtonBorder group-hover:text-white px-3 py-1 text-sm uppercase font-semibold tracking-tighter text-servicesButtonBorder transition duration-600 rounded-sm border border-servicesButtonBorder rounded-tl-none rounded-bl-none'>Agenda {serviceName}</button>
             </div>
           </div>
           <div className='h-full'>

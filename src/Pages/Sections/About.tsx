@@ -1,5 +1,5 @@
 import { AboutCard } from "../../components/AboutCards";
-import paws from "../../assets/paws-big.png"
+import paws from "../../assets/images/paws-big.png"
 
 export const About = () => {
   return (
