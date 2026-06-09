@@ -11,7 +11,7 @@ export { default as pawBackground } from "./paws-big.png";
 export { default as ucomingDog } from "./u-coming-dog.png";
 export { default as esteticaDog } from "./estetica-dog.png";
 export { default as beforeAfter } from "./before-after.png";
-export { default as guarderiaDog } from "./guarderiaDog.png";
+export { default as guarderiaDog } from "./guarderia-dog.png";
 export { default as limpiezasDog } from "./limpiezas-dog.png";
 export { default as consultasDog } from "./consultas-dog.png";
 export { default as vacunacionDog } from "./vacunacion-dog.png";
